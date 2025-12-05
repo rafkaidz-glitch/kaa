@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zidane store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: silver;
+            color: #000;
+        }
+
+        .header {
+            background: rgba(0,0,0,0.3);
+            padding: 15px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(6px);
+            color: white;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .search-box input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 20px;
+            width: 200px;
+            outline: none;
+        }
+
+        .container {
+            padding: 20px;
+            color: black;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: black;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .app {
+            background: rgba(0,0,0,0.1);
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform .2s;
+            cursor: pointer;
+            color: black;
+        }
+
+        .app:hover {
+            transform: scale(1.05);
+            background: rgba(0,0,0,0.2);
+        }
+
+        .app img {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.7;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        <h1>Zidane store</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Cari Mainan...">
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <h2>Mainan Mahal</h2>
+        <div class="app-grid">
+
+            <div class="app">
+                <img src="lego.jpeg" alt="app">
+                <h3>dragon lego</h3>
+                <p>Lego</p>
+            </div>
+
+            <div class="app">
+                <img src="iron.jpeg" alt="app">
+                <h3>costum</h3>
+                <p>Ironman</p>
+            </div>
+
+            <div class="app">
+                <img src="remot.jpeg" alt="app">
+                <h3>Mobil Control</h3>
+                <p>Remot Control</p>
+            </div>
+
+            <div class="app">
+                <img src="hotw.jpeg" alt="app">
+                <h3>Mobil Besi</h3>
+                <p>Hotwheels</p>
+            </div>
+
+            <!-- ⭐ 4 mainan baru di bawah ini ⭐ -->
+
+            <div class="app">
+                <img src="trans.jpeg" alt="app">
+                <h3>Transformer</h3>
+                <p>Robot Elektrik</p>
+            </div>
+
+            <div class="app">
+                <img src="jarvis.jpeg" alt="app">
+                <h3>ironman mask</h3>
+                <p>ironman halmet</p>
+            </div>
+
+            <div class="app">
+                <img src="zero.jpeg" alt="app">
+                <h3>Ultraman</h3>
+                <p>Boneka Aksi</p>
+            </div>
+
+            <div class="app">
+                <img src="tmbk.jpeg" alt="app">
+                <h3>tembakan </h3>
+                <p>Tembakan peluru</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Zidane Mini Toy store — Dibuat dengan AI (HTML & CSS)
+    </div>
+
+</body>
+</html>
